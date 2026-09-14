@@ -1352,6 +1352,126 @@ body::after{opacity:.018;mix-blend-mode:multiply}
 }
 </style>
 
+
+<style>
+/* ===== Image presentation refinement V4 ===== */
+.media-frame,
+.campus-thumb {
+  overflow: hidden !important;
+  background: #eee6dc !important;
+  border: 1px solid rgba(46,35,25,.10) !important;
+  box-shadow: 0 10px 28px rgba(54,43,33,.08) !important;
+}
+
+/* Never crop project screenshots: preserve the complete original image. */
+.media-frame img,
+.campus-thumb img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #eee6dc !important;
+  padding: 0 !important;
+  transform: none;
+}
+
+/* Work case media: larger, cleaner, and based on the image's native proportions. */
+#work .work-media {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, .82fr) !important;
+  grid-template-rows: auto auto !important;
+  gap: 16px !important;
+  align-items: start !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+#work .work-media .media-frame {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-self: start !important;
+}
+#work .work-media .media-frame.tall {
+  grid-row: 1 / span 2 !important;
+}
+#work .work-media .media-frame.tall img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Make all case-study screenshots visually substantial on desktop. */
+.case-1 .work-media,
+.case-2 .work-media,
+.case-3 .work-media {
+  width: 100% !important;
+}
+
+/* Personal project gallery: natural aspect ratios, no forced cropping. */
+#personal .personal-gallery,
+#capabilities .personal-gallery {
+  align-items: start !important;
+}
+#personal .personal-gallery .media-frame,
+#capabilities .personal-gallery .media-frame {
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: start !important;
+}
+
+/* Campus images keep the full photo/screenshot while filling the card width. */
+#campus .campus-thumb {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Subtle image interaction without changing the visible crop. */
+.media-frame img,
+.campus-thumb img {
+  transition: transform .55s cubic-bezier(.2,.75,.2,1), filter .55s ease !important;
+}
+.media-frame:hover img,
+.campus-thumb:hover img {
+  transform: scale(1.018) !important;
+  filter: saturate(1.01) !important;
+}
+
+/* Desktop: keep the work text/image balance generous. */
+@media (min-width: 981px) {
+  #work .work-card {
+    grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr) !important;
+    gap: 46px !important;
+    align-items: start !important;
+  }
+  #work .work-copy {
+    padding-top: 8px !important;
+  }
+}
+
+/* Tablet/mobile: stack case media while preserving the full image. */
+@media (max-width: 980px) {
+  #work .work-media {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto !important;
+    align-items: start !important;
+  }
+  #work .work-media .media-frame.tall {
+    grid-row: auto !important;
+  }
+}
+
+@media (max-width: 680px) {
+  #work .work-media {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+  #personal .personal-gallery,
+  #capabilities .personal-gallery {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+</style>
 </head>
 
 <body>
