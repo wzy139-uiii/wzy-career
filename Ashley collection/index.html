@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="万之源个人作品集｜品牌营销、红人营销、新媒体运营、海外营销" name="description"/>
+<meta content="万之源" name="author"/>
+<meta content="#0d3f40" name="theme-color"/>
+<title>万之源｜Marketing Portfolio</title>
+<style>
+:root{
+  --ink:#171513; --muted:#766d63; --brown:#8a725b; --brown-dark:#4f4034;
+  --cream:#f5f0e8; --ivory:#fbfaf7; --sand:#e7dccd; --line:#ded4c7;
+  --dark:#171512; --white:#fff; --accent:#b49a7b;
+  --max:1240px; --radius:28px; --shadow:0 20px 60px rgba(58,44,31,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;line-height:1.75;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 20% 10%,rgba(180,154,123,.12),transparent 28%),radial-gradient(circle at 90% 70%,rgba(231,220,205,.28),transparent 34%);z-index:-1}
+img{display:block;max-width:100%} a{color:inherit;text-decoration:none}
+.progress{position:fixed;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#7d6956,#b49a7b,#171513);z-index:1000}
+.nav{position:fixed;top:14px;left:0;right:0;z-index:90;display:flex;justify-content:center}
+.nav-inner{width:min(calc(100% - 28px),1180px);display:flex;align-items:center;justify-content:space-between;padding:10px 12px;border:1px solid rgba(40,30,23,.08);background:rgba(251,250,247,.88);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:999px;box-shadow:0 14px 38px rgba(45,34,25,.07)}
+.brand-dot{width:13px;height:13px;border-radius:50%;background:linear-gradient(145deg,#171513,#b49a7b);box-shadow:0 0 0 6px rgba(180,154,123,.12)}
+.nav-links{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}.nav-links a{font-size:13px;color:#6d645b;padding:8px 14px;border-radius:999px;transition:.25s ease}.nav-links a:hover,.nav-links a.active{background:#eee6dc;color:#171513}
+main{position:relative}.container{width:min(var(--max),calc(100% - 48px));margin:auto} section{scroll-margin-top:100px}
+.hero{min-height:76svh;padding:110px 0 58px;display:grid;align-items:center;background:linear-gradient(135deg,#fbfaf7 0%,#f1e9df 58%,#e9dfd1 100%);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,6vw,88px);align-items:center}.eyebrow{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8a7c6e;font-weight:700}.eyebrow:before{content:"";width:46px;height:1px;background:#9e866b}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(68px,8vw,112px);line-height:.88;letter-spacing:-.07em;margin:18px 0 18px;font-weight:700}.hero-subtitle{font-family:Georgia,"Times New Roman",serif;font-size:clamp(22px,2.4vw,34px);letter-spacing:.02em;color:#2a241e;margin-bottom:10px}.hero-intro{font-size:15px;color:#5f554c;font-weight:650;margin:0 0 12px}.hero-description{max-width:560px;color:var(--muted);font-size:14px;margin:0 0 24px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:9px;border-radius:999px;padding:11px 17px;font-size:12px;font-weight:700;letter-spacing:.03em;border:1px solid #b8aa9a;transition:.25s ease}.btn-primary{background:#191713;color:#fff;border-color:#191713}.btn-primary:hover{transform:translateY(-2px);background:#30271f}.btn-ghost{background:rgba(255,255,255,.62)}.btn-ghost:hover{background:#fff}.hero-art{position:relative;min-height:450px}.hero-art:after{content:"";position:absolute;inset:12px 0 0 28px;border:1px solid rgba(96,78,60,.16);border-radius:38px;pointer-events:none}.hero-panel{position:relative;z-index:2;background:var(--dark);border-radius:38px;overflow:hidden;min-height:450px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}.hero-panel .shape{position:absolute;width:78%;height:120%;right:-18%;top:-10%;border-radius:50%;background:linear-gradient(145deg,#a89074,#d6c6b2);opacity:.85}.hero-panel .shape2{position:absolute;width:45%;height:70%;left:8%;bottom:-12%;border-radius:50%;background:#efe7dc;opacity:.75}.hero-panel .hero-mark{position:relative;z-index:3;color:#f8f2e9;font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,7vw,90px);line-height:.82;text-align:right;padding:40px}.hero-mark span{display:block;font-size:.22em;letter-spacing:.22em;font-family:Inter,sans-serif;margin-top:18px;color:#d6c6b2}
+.section{padding:120px 0}.section.alt{background:#f5efe7}.section.dark{background:#1a1714;color:#f8f4ec}.section-header{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px}.section-kicker,.label,.case-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#917d69}.section.dark .section-kicker{color:#bca58a}.section-title{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,5.2vw,72px);line-height:.95;letter-spacing:-.055em;margin:7px 0 0}.section-lead{max-width:450px;color:var(--muted);margin:0;font-size:14px}.section.dark .section-lead{color:#c7bbaf}
+.about-story{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px}.story-card{padding:36px;background:#fff;border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow)}.story-card h3{font-family:Georgia,"Times New Roman",serif;font-size:31px;line-height:1.15;margin:12px 0 18px}.story-card p{color:var(--muted);font-size:15px}.flow{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:28px}.flow-item{padding:18px 14px;border-right:1px solid var(--line)}.flow-item:last-child{border-right:0}.flow-item b{display:block;font-size:15px;margin-bottom:5px}.flow-item span{font-size:11px;color:#807569}
+.edu-wrap{display:grid;grid-template-columns:1fr 2.1fr;border-top:1px solid var(--line)}.edu-year{padding:24px 0;color:#887a6b;font-size:12px;letter-spacing:.08em}.edu-item{padding:24px 0 34px 34px;border-bottom:1px solid var(--line);position:relative}.edu-item:before{content:"";position:absolute;left:0;top:31px;width:9px;height:9px;border-radius:50%;background:#9e876d;box-shadow:0 0 0 6px #f0e9df}.edu-item h3{font-family:Georgia,"Times New Roman",serif;font-size:28px;margin:0 0 7px}.edu-item p{color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{padding:6px 10px;border-radius:999px;background:#eee6dc;font-size:10px;color:#63564a}
+.work-intro{margin-bottom:18px}.case{padding:55px 0 90px;border-top:1px solid var(--line)}.case-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:46px;align-items:start}.case-copy{position:sticky;top:112px}.case-no{font-family:Georgia,"Times New Roman",serif;font-size:90px;line-height:.8;color:#dfd6ca;letter-spacing:-.09em}.case-copy h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,6vw,78px);line-height:.88;margin:16px 0 12px;letter-spacing:-.065em}.case-meta{font-size:12px;color:#8a7c70;margin-bottom:20px}.case-copy>p{font-size:15px;color:#5f554d;max-width:560px}.case-line{height:1px;background:var(--line);margin:24px 0}.metrics{display:flex;gap:30px;flex-wrap:wrap}.metric strong{display:block;font-family:Georgia,"Times New Roman",serif;font-size:32px;line-height:1}.metric span{display:block;font-size:10px;color:#8b7d71;margin-top:6px}.bullet-list{margin:24px 0 0;padding-left:18px;color:#655a51;font-size:12px}.bullet-list li+li{margin-top:7px}
+.case-media{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;align-items:start}.image-card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 36px rgba(57,43,31,.06)}.image-card img{width:100%;height:auto;object-fit:contain;background:#eee7dc}.image-card figcaption{padding:10px 13px;font-size:10px;letter-spacing:.04em;color:#84776a;border-top:1px solid var(--line);background:#fbfaf7}.image-card.main{grid-row:span 2}.image-card.main img{min-height:480px}.case-media .side-stack{display:grid;gap:14px}.case-media .side-stack .image-card img{max-height:240px;object-fit:contain}.case:nth-of-type(2n){background:#f7f1e9}
+.personal-story{display:grid;grid-template-columns:.72fr 1.28fr;gap:28px}.profile-card{background:#1b1815;color:#f6f0e7;border-radius:30px;padding:36px;min-height:100%;position:relative;overflow:hidden}.profile-card:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-100px;top:-80px;border:1px solid rgba(255,255,255,.13)}.profile-card h3{font-family:Georgia,"Times New Roman",serif;font-size:58px;line-height:.86;margin:20px 0}.profile-card p{color:#c8bbb0;font-size:13px;position:relative;z-index:2}.profile-stat{display:flex;gap:32px;margin-top:26px}.profile-stat strong{font-family:Georgia,"Times New Roman",serif;font-size:30px}.profile-stat span{display:block;color:#aa9b8f;font-size:10px}.personal-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}.personal-gallery .image-card:first-child{grid-column:span 2}.personal-gallery img{max-height:560px;object-fit:contain}.personal-gallery .image-card:first-child img{max-height:430px}
+.capability-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cap-card{background:#fff;border:1px solid var(--line);padding:28px;border-radius:24px;min-height:250px;box-shadow:var(--shadow)}.cap-card .num{font-family:Georgia,"Times New Roman",serif;font-size:22px;color:#b39a7d}.cap-card h3{font-family:Georgia,"Times New Roman",serif;font-size:26px;line-height:1.05;margin:50px 0 10px}.cap-card p{font-size:12px;color:#766b61}.tool-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.tool{background:#eee7dc;padding:24px;border-radius:22px}.tool b{font-family:Georgia,"Times New Roman",serif;font-size:25px}.python-story{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;margin-top:14px}.python-copy{background:#fff;border:1px solid var(--line);padding:32px;border-radius:28px}.python-copy h3{font-family:Georgia,"Times New Roman",serif;font-size:30px;margin:14px 0}.python-copy p{color:var(--muted);font-size:14px}.python-gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px}.python-gallery img{max-height:420px;object-fit:contain}
+.campus-list{border-top:1px solid var(--line)}.campus-item{display:grid;grid-template-columns:.18fr .82fr .38fr;gap:30px;padding:34px 0;border-bottom:1px solid var(--line)}.campus-year{font-size:11px;color:#8b7d70}.campus-item h3{font-family:Georgia,"Times New Roman",serif;font-size:26px;margin:0 0 8px}.campus-item p{font-size:13px;color:#71665d;margin:0}.campus-thumb img{width:100%;height:auto;border-radius:18px;background:#fff;border:1px solid var(--line)}
+.contact{background:#1a1714;color:#f7f1e9;padding:125px 0 70px}.contact h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(64px,10vw,140px);line-height:.8;letter-spacing:-.07em;margin:15px 0 40px}.contact h2 span{color:#b59c80}.contact-grid{display:flex;justify-content:space-between;gap:35px;align-items:end}.contact-copy{max-width:520px;color:#c7bbb0;font-size:13px}.contact-links{display:flex;flex-direction:column;align-items:flex-end;gap:8px}.contact-links a{font-size:16px;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:4px}.contact-links a:hover{color:#cdb79e}.contact footer{padding-top:45px;margin-top:55px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;color:#8f8378;font-size:10px}
+.reveal{opacity:1;transform:none}.js-reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.75,.2,1)}.js-reveal.in{opacity:1;transform:none}.stagger>*{opacity:1;transform:none}.stagger.js-stagger>*{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.stagger.js-stagger.in>*{opacity:1;transform:none}.stagger.js-stagger.in>*:nth-child(2){transition-delay:.06s}.stagger.js-stagger.in>*:nth-child(3){transition-delay:.12s}.stagger.js-stagger.in>*:nth-child(4){transition-delay:.18s}
+@media(max-width:980px){.hero-grid,.about-story,.case-grid,.personal-story,.python-story{grid-template-columns:1fr}.hero-art{order:-1;min-height:360px}.hero-panel{min-height:360px}.case-copy{position:relative;top:auto}.case-media{grid-template-columns:1fr 1fr}.case-media .image-card.main{grid-column:1/-1;grid-row:auto}.case-media .image-card.main img{min-height:0}.capability-grid{grid-template-columns:1fr 1fr}.campus-item{grid-template-columns:.2fr 1fr}.campus-thumb{grid-column:2}.section-header{display:block}.section-lead{margin-top:16px}.flow{grid-template-columns:1fr 1fr}.contact-grid{flex-direction:column;align-items:flex-start}.contact-links{align-items:flex-start}}
+@media(max-width:680px){.container{width:min(calc(100% - 24px),1240px)}.nav{top:8px}.nav-links{display:none}.hero{padding-top:90px;min-height:auto}.hero-grid{gap:22px}.hero h1{font-size:68px}.hero-art{min-height:250px}.hero-panel{min-height:250px;border-radius:25px}.hero-mark{font-size:50px!important;padding:26px!important}.section{padding:78px 0}.section-title{font-size:44px}.case{padding:40px 0 60px}.case-no{font-size:65px}.case-copy h3{font-size:56px}.case-media{grid-template-columns:1fr}.personal-gallery{grid-template-columns:1fr}.personal-gallery .image-card:first-child{grid-column:auto}.capability-grid{grid-template-columns:1fr}.tool-row,.python-gallery{grid-template-columns:1fr}.campus-item{grid-template-columns:1fr}.campus-thumb{grid-column:auto}.contact{padding:90px 0 50px}.contact footer{flex-direction:column;gap:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js-reveal,.stagger.js-stagger>*{transition:none}}
+
+/* V8: minimal cover — name only */
+.hero{min-height:58svh;height:58svh;padding:0;background:linear-gradient(180deg,#fbfaf7 0%,#f3ece2 100%);border-bottom:1px solid var(--line);display:flex;align-items:flex-end;}
+.hero-minimal{width:min(var(--max),calc(100% - 44px));padding-bottom:clamp(44px,8vh,92px);}
+.hero-minimal h1{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(88px,13vw,180px);line-height:.82;letter-spacing:-.085em;font-weight:700;color:#171512;}
+</style>
+<style id="story-editorial-overhaul">
+:root{
+  --ink:#171512;--ink-soft:#6f655b;--deep:#1b1815;--cream:#f4eee5;--paper:#fbf8f3;
+  --sand:#e7dac9;--sand-2:#efe5d8;--taupe:#c9b9a4;--brown:#8b6746;--brown-deep:#5d442e;
+  --white:#ffffff;--line:rgba(33,25,18,.12);--shadow:0 24px 70px rgba(51,37,25,.10);
+}
+body{background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;}
+body::before{opacity:.36;background:radial-gradient(circle at 8% 0%,rgba(201,185,164,.20),transparent 28%),radial-gradient(circle at 92% 20%,rgba(139,103,70,.10),transparent 24%);filter:blur(70px)}
+body::after{opacity:.018;mix-blend-mode:multiply}
+.progress{background:var(--brown);box-shadow:none}
+.nav{inset:16px 0 auto}.nav-inner{background:rgba(251,248,243,.88);border:1px solid rgba(44,33,23,.10);box-shadow:0 12px 36px rgba(55,41,28,.08);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.brand-dot{background:linear-gradient(135deg,#14120f,#a3825e);box-shadow:0 0 0 5px rgba(139,103,70,.08)}
+.nav-links a{color:rgba(23,21,18,.64)}.nav-links a:hover,.nav-links a.active{color:var(--ink);background:rgba(139,103,70,.10)}
+.container{width:min(1260px,calc(100% - 64px))}
+.hero{min-height:78svh;height:auto;padding:150px 0 72px;background:linear-gradient(180deg,#f8f4ee 0%,#f4eee5 70%,#eee4d6 100%);border-radius:0;position:relative}
+.hero::before{content:"";position:absolute;inset:14% 0 0;background:radial-gradient(ellipse at 82% 36%,rgba(139,103,70,.10),transparent 34%),radial-gradient(ellipse at 16% 72%,rgba(201,185,164,.18),transparent 32%);filter:blur(38px);z-index:-1}
+.hero::after{opacity:.10;background:linear-gradient(90deg,transparent 0 18%,rgba(91,68,46,.20) 18% 18.2%,transparent 18.2% 100%)}
+.hero-split{grid-template-columns:1fr;gap:0;max-width:1260px}
+.hero-copy-refined{max-width:980px;padding:36px 0 0;position:relative}
+.eyebrow{color:#7d6f62;margin-bottom:26px}.eyebrow span{background:var(--brown);width:56px}
+.hero h1{font-size:clamp(78px,11vw,156px);line-height:.82;letter-spacing:-.085em;font-weight:760;margin-bottom:18px}.hero h1 .fill{color:var(--ink)}
+.hero-subtitle{font-family:Georgia,"Times New Roman",serif;font-size:clamp(24px,3.1vw,44px);letter-spacing:.04em;color:var(--brown-deep);font-weight:500;margin-bottom:18px}
+.hero-intro{font-size:clamp(17px,1.6vw,22px);font-weight:640;color:var(--ink);margin:0 0 12px}.hero-description{max-width:620px;font-size:15px;line-height:1.95;color:var(--ink-soft);margin-bottom:28px}
+.hero-actions{gap:12px}.btn{padding:13px 19px;font-size:12px;border-radius:999px}.btn-primary{background:var(--ink);box-shadow:none}.btn-ghost{border-color:rgba(23,21,18,.16);background:transparent}.btn-ghost:hover{background:#fff}
+.hero-copy-refined::after{content:"A story of moving between brands, people, content and data.";display:block;margin-top:72px;padding-top:18px;border-top:1px solid var(--line);max-width:760px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,2.2vw,30px);line-height:1.25;color:var(--brown-deep)}
+.scroll-note{position:relative;left:auto;bottom:auto;transform:none;justify-content:flex-end;max-width:1260px;width:min(100% - 64px,1260px);margin:46px auto 0;color:#87796a}.scroll-line{background:rgba(91,68,46,.18)}.scroll-line::after{background:var(--brown)}
+.section{padding:132px 0}.section:nth-of-type(even){background:#f6f0e8}.section-header{margin-bottom:68px}.section-kicker{color:#9a8062;letter-spacing:.22em;font-size:11px}.section-title{font-family:Georgia,"Times New Roman",serif;font-size:clamp(46px,6vw,88px);font-weight:500;letter-spacing:-.04em}.section-lead{font-size:15px;line-height:1.9;color:var(--ink-soft)}
+.about-grid{grid-template-columns:1.15fr .85fr;gap:0}.glass{background:#fffdf9;border:1px solid rgba(23,21,18,.10);box-shadow:none;border-radius:0}.about-main{min-height:460px;padding:54px;border-right:0}.about-main h3{font-family:Georgia,"Times New Roman",serif;font-size:34px;font-weight:500}.about-main p{font-size:16px;line-height:2.0;color:#5e554d}.quote{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:500;color:var(--brown-deep);margin-top:54px}
+.about-side{grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}.mini{border-radius:0;min-height:230px;padding:34px;background:#faf6ef;box-shadow:none}.mini:nth-child(2),.mini:nth-child(3){background:#efe5d8}.mini b{font-family:Georgia,"Times New Roman",serif;font-size:42px;font-weight:500}.mini span{font-size:12px;line-height:1.7}
+.edu-wrap{grid-template-columns:.22fr 1fr;max-width:960px}.edu-year{padding:30px 0;font-family:Georgia,"Times New Roman",serif;color:var(--brown);font-size:14px}.edu-item{padding:30px 0 40px 44px;border-color:var(--line)}.edu-item::before{background:var(--brown);box-shadow:none}.edu-item h3{font-family:Georgia,"Times New Roman",serif;font-size:32px;font-weight:500}.tag{background:#eee4d6;color:#5d4936}
+.work-intro{padding-top:15px;min-height:180px}.work-intro .section-title{max-width:700px}.work-scene{min-height:auto;padding:34px 0 110px;display:block}.work-pin{width:min(1260px,calc(100% - 64px));min-height:0}.work-rail{display:none}.work-card{min-height:0;padding:0;border-radius:0;background:transparent!important;box-shadow:none;border:0;grid-template-columns:.88fr 1.12fr;gap:72px;align-items:start}.work-copy{padding-top:18px}.case-label{color:#9b8163;font-size:10px}.work-copy h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(56px,7vw,100px);font-weight:500;color:var(--ink);margin:12px 0 18px}.work-meta{font-size:12px;color:#8b7a68;padding-bottom:18px;border-bottom:1px solid var(--line)}.work-copy>p{font-size:16px;line-height:2;color:#5b5149}.metrics{gap:1px;background:var(--line);margin:28px 0 26px}.metric{min-width:0;flex:1;border-radius:0;background:#f5eee5;border:0;padding:17px}.metric:nth-child(2){background:#fffdf9}.metric strong{font-family:Georgia,"Times New Roman",serif;font-size:29px;font-weight:500}.metric span{font-size:10px;color:#76695d}.bullet-list{font-size:13px;line-height:1.9;color:#6f655b}.bullet-list li+li{margin-top:8px}
+.work-media{min-height:620px;grid-template-columns:1.15fr .85fr;grid-template-rows:1fr 1fr;gap:14px}.media-frame{background:#ece3d7;border-radius:0;border:1px solid rgba(46,35,25,.10);box-shadow:none}.media-frame img{object-fit:contain;background:#eee6dc;padding:8px}.media-frame.tall{grid-row:1/span 2}.case-2 .work-media,.case-3 .work-media{background:transparent}.case-2 .work-card,.case-3 .work-card{background:transparent}
+#work .case-2{background:#f6f0e8;padding-top:118px}#work .case-3{padding-top:118px}
+.personal-grid{grid-template-columns:.72fr 1.28fr;gap:1px;background:var(--line)}.profile-card{border-radius:0;background:#26211c;color:#f6eee5;box-shadow:none;padding:46px}.profile-card h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:56px}.profile-card p{color:#d8cbbd;line-height:1.9}.profile-stat strong{font-family:Georgia,"Times New Roman",serif;font-weight:500}.personal-gallery{gap:1px;background:var(--line)}.personal-gallery .media-frame{min-height:310px;border-radius:0;background:#eee6dc}
+.capability-grid{grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}.cap-card{border-radius:0;min-height:300px;background:#fffdf9;box-shadow:none;border:0;padding:30px}.cap-card:nth-child(1),.cap-card:nth-child(4),.cap-card:nth-child(2),.cap-card:nth-child(3){background:#fffdf9}.cap-card:nth-child(2),.cap-card:nth-child(3){background:#efe5d8}.cap-card h3{font-family:Georgia,"Times New Roman",serif;font-size:31px;font-weight:500;margin:70px 0 12px}.cap-card p{font-size:13px;line-height:1.9}.cap-card::after{border-color:rgba(139,103,70,.14)}
+.contact{background:#1f1b17;color:#f6eee5;border-radius:0;margin-top:80px;padding:140px 0 80px}.contact h2{font-family:Georgia,"Times New Roman",serif;font-weight:500}.contact h2 span{-webkit-text-stroke:1px rgba(246,238,229,.34)}.contact-copy{color:#cfc0af}.contact-links a:hover{color:#d9b98d}.contact::before{opacity:.45}
+.campus-list{border-top:1px solid var(--line)}.campus-item{grid-template-columns:.20fr 1fr .38fr;gap:28px;padding:44px 0}.campus-item h3{font-family:Georgia,"Times New Roman",serif;font-size:29px;font-weight:500}.campus-item p{font-size:13px;line-height:1.9}.campus-thumb{border-radius:0;background:#eee6dc}.campus-thumb img{object-fit:contain;background:#eee6dc;padding:8px}
+/* Storytelling rhythm */
+#about::before,#education::before,#work::before,#personal::before,#capabilities::before,#campus::before{content:"";display:block;width:100%;height:1px;background:var(--line);margin-bottom:42px}
+.work-scene::before{content:"";display:block;font-family:Georgia,"Times New Roman",serif;color:rgba(91,68,46,.22);font-size:120px;line-height:.7;margin-bottom:8px}
+.case-1::before{content:"01"}.case-2::before{content:"02"}.case-3::before{content:"03"}
+@media (max-width:980px){.container{width:min(100% - 40px,1260px)}.hero{padding-top:128px}.work-card{grid-template-columns:1fr;gap:38px}.work-media{min-height:500px}.about-grid{grid-template-columns:1fr}.about-side{grid-template-columns:1fr 1fr}.capability-grid{grid-template-columns:1fr 1fr}.campus-item{grid-template-columns:.24fr 1fr}.campus-thumb{grid-column:2}.scroll-note{width:min(100% - 40px,1260px)}}
+@media (max-width:680px){.container{width:calc(100% - 28px)}.nav-inner{width:calc(100% - 18px)}.hero{min-height:76svh;padding:112px 0 52px}.hero h1{font-size:clamp(62px,20vw,96px)}.hero-subtitle{font-size:22px}.hero-copy-refined::after{font-size:18px;margin-top:52px}.section{padding:84px 0}.section-header{margin-bottom:42px}.section-title{font-size:48px}.about-main{padding:30px}.about-side{grid-template-columns:1fr 1fr}.work-scene{padding:20px 0 74px}.work-pin{width:calc(100% - 28px)}.work-copy h3{font-size:58px}.work-media{min-height:420px}.personal-grid{grid-template-columns:1fr}.capability-grid{grid-template-columns:1fr}.campus-item{grid-template-columns:1fr}.campus-thumb{grid-column:auto}.contact{padding-top:96px;margin-top:30px}}
+
+/* --- WORK VISIBILITY FIX: keep case studies visible while preserving reveal motion elsewhere --- */
+.work-pin{margin:0 auto;}
+.work-card.reveal{opacity:1 !important;transform:none !important;}
+.work-intro.reveal{opacity:1 !important;transform:none !important;}
+.work-card{width:100%;}
+.work-media{width:100%;}
+.work-media .media-frame{min-width:0;}
+@media (max-width:980px){.work-pin{margin:0 auto;}.work-card.reveal{opacity:1 !important;transform:none !important;}.work-media{width:100%;}}
+@media (max-width:680px){.work-pin{width:calc(100% - 28px);}.work-card{width:100%;}.work-media{width:100%;}}
+</style>
+<style id="work-final-fix">
+/* Final work-section layout fix: force normal document flow and full visibility */
+#work{position:relative;display:block;width:100%;overflow:visible;}
+#work .work-intro{position:relative;display:block;width:min(1260px,calc(100% - 64px));margin:0 auto;opacity:1!important;visibility:visible!important;transform:none!important;}
+#work .work-scene{position:relative;display:block;width:100%;min-height:0;padding:52px 0 110px;overflow:visible;}
+#work .work-scene::before{position:relative;display:block;width:min(1260px,calc(100% - 64px));margin:0 auto 18px;content:attr(data-case);font-family:Georgia,"Times New Roman",serif;font-size:13px;line-height:1;color:#a07f5d;letter-spacing:.18em;opacity:1;text-align:left;}
+#work .case-1::before{content:"CASE 01";}
+#work .case-2::before{content:"CASE 02";}
+#work .case-3::before{content:"CASE 03";}
+#work .work-pin{position:relative;display:block;width:min(1260px,calc(100% - 64px));max-width:1260px;min-height:0;margin:0 auto!important;padding:0;}
+#work .work-rail{display:none!important;}
+#work .work-card{position:relative;display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;gap:64px!important;width:100%!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;align-items:start!important;opacity:1!important;visibility:visible!important;transform:none!important;}
+#work .work-copy{position:relative;display:block;min-width:0;padding:10px 0 0;opacity:1!important;visibility:visible!important;transform:none!important;}
+#work .work-copy h3{opacity:1!important;visibility:visible!important;transform:none!important;}
+#work .work-copy p,#work .work-copy ul,#work .metrics{opacity:1!important;visibility:visible!important;}
+#work .work-media{position:relative;display:grid!important;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)!important;grid-template-rows:1fr 1fr!important;gap:14px!important;width:100%!important;min-width:0!important;min-height:0!important;height:620px!important;opacity:1!important;visibility:visible!important;transform:none!important;}
+#work .media-frame{position:relative;display:block!important;width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;overflow:hidden!important;background:#eee6dc!important;border:1px solid rgba(46,35,25,.11)!important;}
+#work .media-frame.tall{grid-row:1/span 2!important;}
+#work .media-frame img{display:block!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:contain!important;background:#eee6dc!important;padding:8px!important;opacity:1!important;visibility:visible!important;transform:none!important;}
+#work .case-2,#work .case-3{background:transparent!important;padding-top:52px!important;}
+#work .case-2 .work-card,#work .case-3 .work-card{background:transparent!important;}
+@media(max-width:980px){
+  #work .work-intro,#work .work-pin,#work .work-scene::before{width:min(100% - 40px,1260px);}
+  #work .work-card{grid-template-columns:1fr!important;gap:36px!important;}
+  #work .work-media{height:520px!important;}
+}
+@media(max-width:680px){
+  #work .work-intro,#work .work-pin,#work .work-scene::before{width:calc(100% - 28px);}
+  #work .work-scene{padding:28px 0 74px!important;}
+  #work .case-2,#work .case-3{padding-top:28px!important;}
+  #work .work-media{height:420px!important;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)!important;gap:8px!important;}
+}
+</style>
+<style>
+/* ===== Image presentation refinement V4 ===== */
+.media-frame,
+.campus-thumb {
+  overflow: hidden !important;
+  background: #eee6dc !important;
+  border: 1px solid rgba(46,35,25,.10) !important;
+  box-shadow: 0 10px 28px rgba(54,43,33,.08) !important;
+}
+
+/* Never crop project screenshots: preserve the complete original image. */
+.media-frame img,
+.campus-thumb img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  background: #eee6dc !important;
+  padding: 0 !important;
+  transform: none;
+}
+
+/* Work case media: larger, cleaner, and based on the image's native proportions. */
+#work .work-media {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, .82fr) !important;
+  grid-template-rows: auto auto !important;
+  gap: 16px !important;
+  align-items: start !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
+#work .work-media .media-frame {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-self: start !important;
+}
+#work .work-media .media-frame.tall {
+  grid-row: 1 / span 2 !important;
+}
+#work .work-media .media-frame.tall img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Make all case-study screenshots visually substantial on desktop. */
+.case-1 .work-media,
+.case-2 .work-media,
+.case-3 .work-media {
+  width: 100% !important;
+}
+
+/* Personal project gallery: natural aspect ratios, no forced cropping. */
+#personal .personal-gallery,
+#capabilities .personal-gallery {
+  align-items: start !important;
+}
+#personal .personal-gallery .media-frame,
+#capabilities .personal-gallery .media-frame {
+  min-height: 0 !important;
+  height: auto !important;
+  align-self: start !important;
+}
+
+/* Campus images keep the full photo/screenshot while filling the card width. */
+#campus .campus-thumb {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+/* Subtle image interaction without changing the visible crop. */
+.media-frame img,
+.campus-thumb img {
+  transition: transform .55s cubic-bezier(.2,.75,.2,1), filter .55s ease !important;
+}
+.media-frame:hover img,
+.campus-thumb:hover img {
+  transform: scale(1.018) !important;
+  filter: saturate(1.01) !important;
+}
+
+/* Desktop: keep the work text/image balance generous. */
+@media (min-width: 981px) {
+  #work .work-card {
+    grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr) !important;
+    gap: 46px !important;
+    align-items: start !important;
+  }
+  #work .work-copy {
+    padding-top: 8px !important;
+  }
+}
+
+/* Tablet/mobile: stack case media while preserving the full image. */
+@media (max-width: 980px) {
+  #work .work-media {
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: auto !important;
+    align-items: start !important;
+  }
+  #work .work-media .media-frame.tall {
+    grid-row: auto !important;
+  }
+}
+
+@media (max-width: 680px) {
+  #work .work-media {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+  #personal .personal-gallery,
+  #capabilities .personal-gallery {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+    /* YZF: single useful visual, no logo/no ambiguous opening visual */
+    .case-media-single{display:block; min-height:0;}
+    .case-media-single .single-image{width:100%; min-height:460px;}
+    .case-media-single .single-image img{object-fit:contain; object-position:center; background:#eee4d5;}
+    @media (max-width:980px){.case-media-single .single-image{min-height:380px;}}
+    @media (max-width:680px){.case-media-single .single-image{min-height:300px;}}
+</style>
+
+<style id="final-layout-fix">
+/* ===== FINAL LAYOUT / CONSISTENCY FIX ===== */
+/* Keep the fixed navigation from covering hero copy. */
+.hero.hero-simple{
+  min-height:68svh !important;
+  height:auto !important;
+  padding:150px 0 76px !important;
+  display:flex !important;
+  align-items:center !important;
+  background:linear-gradient(180deg,#fbfaf7 0%,#f3ece3 72%,#eee4d6 100%) !important;
+}
+.hero-minimal{
+  width:min(var(--max),calc(100% - 44px));
+  padding:0 !important;
+}
+.hero-summary{
+  max-width:980px;
+  margin:0;
+}
+.hero-summary h1{
+  margin:0 0 18px !important;
+  line-height:.84 !important;
+}
+.hero-summary .hero-intro{
+  margin:0 0 12px !important;
+}
+.hero-summary .hero-description{
+  margin:0 0 28px !important;
+}
+
+/* Make every campus visual the same frame size, while keeping the full image visible. */
+#campus .campus-item{
+  align-items:stretch !important;
+}
+#campus .campus-thumb{
+  width:100% !important;
+  height:220px !important;
+  min-height:220px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  overflow:hidden !important;
+  background:#eee6dc !important;
+  border:1px solid var(--line) !important;
+}
+#campus .campus-thumb img{
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  padding:10px !important;
+  background:#eee6dc !important;
+}
+
+/* Keep project image frames visually consistent while preserving complete images. */
+#work .image-card,
+#personal .image-card,
+#capabilities .image-card{
+  background:#eee6dc !important;
+}
+#work .image-card img,
+#personal .image-card img,
+#capabilities .image-card img{
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+#work .case-media .main img{
+  max-height:720px !important;
+}
+
+/* Keep the page rhythm refined and prevent content from touching the viewport edges. */
+.section .container,
+#work .container,
+#campus .container{
+  width:min(var(--max),calc(100% - 48px));
+}
+
+@media (max-width:980px){
+  .hero.hero-simple{
+    min-height:72svh !important;
+    padding:128px 0 64px !important;
+  }
+  #campus .campus-thumb{
+    height:200px !important;
+    min-height:200px !important;
+  }
+}
+
+@media (max-width:680px){
+  .hero.hero-simple{
+    min-height:auto !important;
+    padding:116px 0 56px !important;
+  }
+  .hero-minimal{width:calc(100% - 28px) !important;}
+  #campus .campus-thumb{
+    height:210px !important;
+    min-height:210px !important;
+  }
+}
+</style>
+
+</head>
+<body><div class="progress" id="progress"></div><header class="nav"><div class="nav-inner"><a aria-label="首页" class="brand" href="#top"><i class="brand-dot"></i></a><nav aria-label="主导航" class="nav-links"><a href="#about">关于我</a><a href="#education">教育</a><a href="#work">工作经历</a><a href="#personal">个人项目</a><a href="#capabilities">能力</a><a href="#campus">校园经历</a><a href="#contact">联系我</a></nav></div></header><main id="top"><section aria-label="Hero" class="hero hero-simple"><div class="container hero-minimal"><div class="hero-summary"><div class="hero-kicker">MARKETING & INFLUENCER MARKETING</div><h1>万之源</h1><p class="hero-intro">专注品牌营销、红人合作与新媒体运营，具备海外营销项目与数据分析实践。</p><p class="hero-description">从内容策划、达人合作到项目执行与复盘，持续积累真实的营销经验。</p><div class="hero-actions"><a class="btn btn-primary" href="#work">查看项目 ↗</a><a class="btn btn-ghost" href="#contact">联系我 ↗</a></div></div></div></section><section class="section" id="about"><div class="container"><div class="section-header reveal"><div><div class="section-kicker">01 / ABOUT</div><h2 class="section-title">关于我</h2></div><p class="section-lead">商业教育背景 + 海外营销实践 + 内容运营 + 数据分析。</p></div><div class="about-story"><article class="story-card"><div class="label">Marketing Practice</div><h3>以品牌为起点，专注营销实践与内容增长。</h3><p>香港浸会大学工商管理系零售管理本科生，关注品牌营销、红人营销、新媒体运营、内容策划与海外营销。具备从达人挖掘、内容策划、商务合作、项目执行到数据复盘的实践经验，并通过个人内容运营与 Python 数据分析项目持续提升营销与数据能力。</p><div class="case-line"></div></article><article class="story-card"><div class="label">What I Bring</div><div class="flow-item" style="border-right:0;border-bottom:1px solid var(--line);"><b>Brand</b><span>品牌策略 / Campaign 思维</span></div><div class="flow-item" style="border-right:0;border-bottom:1px solid var(--line);"><b>KOL</b><span>达人挖掘 / 商务合作 / 内容审核</span></div><div class="flow-item" style="border-right:0;border-bottom:1px solid var(--line);"><b>Social</b><span>平台运营 / 内容策划 / 发布优化</span></div><div class="flow-item" style="border-right:0;border-bottom:1px solid var(--line);"><b>Data</b><span>Excel / Python / 可视化 / 复盘</span></div></article></div></div></section><section class="section alt" id="education"><div class="container"><div class="section-header reveal"><div><div class="section-kicker">02 / EDUCATION</div><h2 class="section-title">教育经历</h2></div><p class="section-lead">商业管理背景结合营销、消费者与数据分析能力。</p></div><div class="edu-wrap"><div class="edu-year">2022.09 — 2026.12</div><div class="edu-item"><h3>香港浸会大学</h3><p>工商管理本科 · 工商管理系 · 零售管理方向 · 香港</p><div class="tags"><span class="tag">消费者行为分析</span><span class="tag">商业数据分析（Python）</span><span class="tag">数字营销</span><span class="tag">品牌营销</span><span class="tag">战略零售运营管理</span></div></div><div class="edu-year">Language</div><div class="edu-item"><h3>English</h3><p>IELTS 6.5 · 可进行跨团队、跨市场沟通</p></div></div></div></section><section class="section" id="work"><div class="container"><div class="section-header reveal"><div><div class="section-kicker">03 / WORK</div><h2 class="section-title">工作案例</h2></div><p class="section-lead">把经历做成 case study：背景、方法、执行、结果与视觉证据一起阅读。</p></div></div></section><div class="case"><div class="container case-grid"><div class="case-copy"><div class="case-no">01</div><div class="case-label">OVERSEAS BRAND MARKETING</div><h3>AIPER</h3><div class="case-meta">元鼎智能｜品牌策划实习生｜深圳｜2025.05 — 2025.09</div><p>围绕泳池机器人产品海外传播，参与海外 KOL、科技及生活方式媒体合作，推进产品内容在海外社交媒体精准上线。</p><div class="case-line"></div><div class="metrics"><div class="metric"><strong>10 台/日</strong><span>样机发货</span></div><div class="metric"><strong>12%</strong><span>样品管理成本降低</span></div><div class="metric"><strong>20+</strong><span>海外合同审核</span></div></div><ul class="bullet-list"><li>联动设计、DTC 等部门，主导海外用户向宣传内容策划与制作。</li><li>统筹欧美泳池机器人样机发货，日均发货 10 台。</li><li>完善样品管理白皮书并优化调货流程，样品管理成本降低 12%。</li><li>3 个月完成 20 余份海外合同全流程审核并对接跨境付款。</li><li>整合媒体投放、样品管理及合作数据，输出项目复盘报告。</li></ul></div><div class="case-media"><figure class="image-card main"><img alt="海外媒体与内容投放" loading="lazy" src="images/AIPER/AIPER-海外媒体与内容投放.png"/><figcaption>海外媒体与内容投放</figcaption></figure><div class="side-stack"><figure class="image-card"><img alt="海外视频内容" loading="lazy" src="images/AIPER/AIPER-海外视频.png"/><figcaption>海外视频内容</figcaption></figure><figure class="image-card"><img alt="KOL 内容" loading="lazy" src="images/AIPER/AIPER-KOL内容.png"/><figcaption>KOL 内容</figcaption></figure></div></div></div></div><div class="case"><div class="container case-grid"><div class="case-copy"><div class="case-no">02</div><div class="case-label">INFLUENCER MARKETING</div><h3>Velotrade</h3><div class="case-meta">红人营销实习生｜香港｜2026.07 — 至今</div><p>围绕金融赛道红人营销，负责从达人挖掘、筛选、商务谈判到合作落地的完整流程，并跟进内容脚本、发布排期与数据反馈。</p><div class="case-line"></div><div class="metrics"><div class="metric"><strong>46%</strong><span>博主合作转化率</span></div><div class="metric"><strong>3+</strong><span>主要内容平台</span></div></div><ul class="bullet-list"><li>挖掘并对接小红书、抖音、哔哩哔哩等平台金融赛道博主。</li><li>完成达人筛选、商务谈判及合作跟进。</li><li>维护达人资源台账，搭建达人资源库。</li><li>跟进博主发布排期并审核内容脚本，把控内容合规与品牌调性。</li><li>归集曝光、互动等数据反馈。</li></ul></div><div class="case-media"><figure class="image-card main"><img alt="搜索与筛选" loading="lazy" src="images/velotrade/Velotrade-搜索页面.PNG"/><figcaption>搜索与筛选</figcaption></figure><div class="side-stack"><figure class="image-card"><img alt="合作博主" loading="lazy" src="images/velotrade/Velotrade-合作博主.PNG"/><figcaption>合作博主</figcaption></figure><figure class="image-card"><img alt="合作博主 02" loading="lazy" src="images/velotrade/Velotrade-合作博主2.PNG"/><figcaption>合作博主 02</figcaption></figure></div></div></div></div><div class="case"><div class="container case-grid"><div class="case-copy"><div class="case-no">03</div><div class="case-label">SOCIAL MEDIA OPERATION</div><h3>柚子房</h3><div class="case-meta">新媒体运营实习生｜郑州｜2023.06 — 2023.09</div><p>负责海外留学租房赛道小红书品牌账号 0→1 启动，覆盖选题策划、内容输出、发布优化、数据复盘及用户沟通。</p><div class="case-line"></div><div class="metrics"><div class="metric"><strong>0→1</strong><span>品牌账号启动</span></div><div class="metric"><strong>40%</strong><span>客户转化</span></div></div><ul class="bullet-list"><li>完成选题策划、内容输出、发布优化与数据复盘。</li><li>研究平台算法与留学租房用户偏好。</li><li>联动相关部门完成房源监控、优质房源筛选及亮点提炼。</li><li>沟通潜在顾客，实现 40% 客户转化。</li></ul></div><div class="case-media case-media-single"><figure class="image-card main single-image"><img alt="租房图片编辑" loading="lazy" src="images/youzifang/youzifang-租房图片编辑.png"/><figcaption>租房图片编辑</figcaption></figure></div></div></div><section class="section alt" id="personal"><div class="container"><div class="section-header reveal"><div><div class="section-kicker">04 / PERSONAL</div><h2 class="section-title">个人项目</h2></div><p class="section-lead">商业项目之外，通过个人账号持续实践内容运营、平台观察与数据复盘。</p></div><div class="container personal-story"><article class="profile-card"><div class="label" style="color:#bca791">XIAOHONGSHU / TENNIS</div><h3>700+
+Followers</h3><p>个人小红书账号以网球内容为主要方向，持续进行内容发布、账号运营与数据观察。</p><p>通过个人账号实践，对平台内容形式、用户兴趣、发布节奏与数据反馈形成实际理解。</p><div class="profile-stat"><div><strong>700+</strong><span>粉丝</span></div><div><strong>Tennis</strong><span>Content Direction</span></div></div></article><div class="personal-gallery"><figure class="image-card"><img alt="个人账号主页" loading="lazy" src="images/xiaohongshu/xiaohongshu-profile.PNG"/><figcaption>个人账号主页</figcaption></figure><figure class="image-card"><img alt="近期内容发布" loading="lazy" src="images/xiaohongshu/xiaohongshu-最近发布内容.PNG"/><figcaption>近期内容发布</figcaption></figure><figure class="image-card"><img alt="数据观察与复盘" loading="lazy" src="images/xiaohongshu/xiaohongshu-数据报表.PNG"/><figcaption>数据观察与复盘</figcaption></figure></div></div></div></section><section class="section" id="capabilities"><div class="container"><div class="section-header reveal"><div><div class="section-kicker">05 / CAPABILITIES</div><h2 class="section-title">核心能力</h2></div><p class="section-lead">将实际工作经验拆解为可迁移到不同营销项目中的能力模块。</p></div><div class="capability-grid"><article class="cap-card"><div class="num">01</div><h3>Influencer Research</h3><p>达人挖掘、筛选、资源库管理。</p></article><article class="cap-card"><div class="num">02</div><h3>Content Planning</h3><p>内容策划、脚本审核、视觉内容。</p></article><article class="cap-card"><div class="num">03</div><h3>Campaign Execution</h3><p>合作推进、样机、合同与发布排期。</p></article><article class="cap-card"><div class="num">04</div><h3>Data Analysis</h3><p>Excel、Python、数据复盘与可视化。</p></article></div><div class="tool-row"><div class="tool"><div class="label">Microsoft Office</div><b>Word · Excel · PowerPoint</b></div><div class="tool"><div class="label">Content Tools</div><b>Canva · CapCut</b></div></div><div class="python-story"><article class="python-copy"><div class="label">Python</div><h3>Business Data Analysis</h3><p>商业数据分析、可视化与 Correlation Analysis。让数据成为营销判断的一部分，而不是项目结束后的装饰。</p></article><div class="python-gallery"><figure class="image-card"><img alt="Correlation Analysis" loading="lazy" src="images/python/Python技能-correlation分析.png"/><figcaption>Correlation Analysis</figcaption></figure><figure class="image-card"><img alt="数据可视化" loading="lazy" src="images/python/Python技能-可视化分析.png"/><figcaption>数据可视化</figcaption></figure></div></div></div></section><section class="section alt" id="campus"><div class="container"><div class="section-header reveal"><div><div class="section-kicker">06 / CAMPUS</div><h2 class="section-title">校园与组织经历</h2></div><p class="section-lead">展示活动组织、社交媒体与社会实践能力。</p></div><div class="campus-list"><article class="campus-item"><div class="campus-year">2025.10 — 2026.04</div><div><h3>香港浸会大学心理健康急救队长</h3><p>完成《积极心理学》课程并获得认证证书；策划线下心理学活动“心理知识闯关赛”，吸引 200+ 人次参与线上测试；运营学校 Instagram 账号，参与宣传资料制作，包括海报与文案。</p></div><div class="campus-thumb"><img alt="心理学活动线下活动" loading="lazy" src="images/心理学社团/心理学社团-线下活动.png"/></div></article><article class="campus-item"><div class="campus-year">2025.02 — 2025.09</div><div><h3>香港浸会大学社区活动组织者｜长者赋能计划</h3><p>探访长者社区，协助识别家中潜在风险；汇总社区面临的共性问题，并提出基于数据的改善建议，提升长者生活质量。</p></div><div class="campus-thumb"><img alt="长者赋能社区实践" loading="lazy" src="images/老年社区/老年社区-社区照片.png"/></div></article><article class="campus-item"><div class="campus-year">2024.09 — 2025.09</div><div><h3>香港浸会大学网球队队员</h3><p>代表 HKBU 参与八大联校网球赛。</p></div><div class="campus-thumb"><img alt="校园 Instagram 活动内容" loading="lazy" src="images/心理学社团/心理学社团-Instagram.png"/></div></article></div></div></section></main><section class="contact" id="contact"><div class="container"><div class="section-kicker">CONTACT</div><h2>Let’s<br/><span>connect.</span></h2><div class="contact-grid"><p class="contact-copy">WAN ZHIYUAN（万之源）
+Open to brand marketing, influencer marketing, social media and overseas marketing opportunities.</p><div class="contact-links"><a href="mailto:wzy13939084519@outlook.com">wzy13939084519@outlook.com</a><a href="https://www.linkedin.com/in/ashley-wan-354424390" rel="noopener" target="_blank">LinkedIn ↗</a><span style="color:#8f8378;font-size:12px">IELTS 6.5</span></div></div><footer><span>© 2026 万之源 · Personal Portfolio</span><span>Brand · Content · KOL · Data</span></footer></div></section><script>
+const progress=document.getElementById('progress');
+function updateProgress(){const max=document.documentElement.scrollHeight-window.innerHeight;progress.style.width=`${max>0?(scrollY/max)*100:0}%`}
+addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+const revealEls=document.querySelectorAll('.reveal,.stagger');
+revealEls.forEach(el=>el.classList.add(el.classList.contains('stagger')?'js-stagger':'js-reveal'));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.08,rootMargin:'0px 0px -6% 0px'});revealEls.forEach(el=>io.observe(el));
+const links=[...document.querySelectorAll('.nav-links a')]; const sections=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const so=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===`#${e.target.id}`))}),{threshold:.25,rootMargin:'-16% 0px -58% 0px'}); sections.forEach(s=>so.observe(s));
+document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>img.closest('.image-card,.campus-thumb')?.classList.add('missing-image')));
+</script></body>
+</html>
